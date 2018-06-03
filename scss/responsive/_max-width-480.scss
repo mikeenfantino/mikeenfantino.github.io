@@ -1,0 +1,50 @@
+/* Max Width 480px
+------------------------------------------------- */
+
+@media screen and (max-width: 480px) {
+
+	.header-profile-titles h1 {
+		font-size: 1.75em; /* 28px/16px */
+	}
+
+	.header-profile-titles .title {
+		display: block;
+	}
+
+	.header-profile-titles .seperate {
+		display: none;
+	}
+
+	.header-profile-titles .location {
+		display: block;
+	}
+
+	.main-header {
+		font-size: 1.25em; /* 20px/16px */
+	}
+
+	.box-top-icons {
+	  font-size: 1.75em; /* 28px/16px */
+	}
+
+	.box-content h5 {
+		font-size: 1em; /* 16px */
+	}
+
+	.box-content p {
+	  font-size: 0.875em; /* 14px/16px */
+	}
+
+	.box-content ul {
+		font-size: 0.875em; /* 14px/16px */
+	}
+
+	.box-title h4 {
+		font-size: 1.125em; /* 18px/16px */
+	}
+
+	.about-modal p {
+		font-size: 0.875em; /* 14px/16px */
+	}
+
+}
