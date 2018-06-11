@@ -107,9 +107,8 @@
   font-size: 1.25em; /* 20px/16px */
 }
 
-.box:nth-child(3n) .box-top::after,
 .box:last-child .box-top::after,
-.box.no-arrow .box-top::after {
+.box:first-child .box-top::after {
   content: none;
 }
 
@@ -155,27 +154,8 @@
   margin-bottom: 0;
 }
 
-.box-content ul {
-  list-style: disc;
-  margin: 1em 0 1em 18px;
-  font-weight: 300;
-}
-
-.box-content ul:last-child {
-  margin-bottom: 0;
-}
-
-.box-content li {
-  line-height: 1.5;
-}
-
 .box-content a {
   color: #555;
-}
-
-.box-content .extra {
-  font-size: 0.625em; /* 10px/16px */
-  font-weight: 400;
 }
 
 .box-title h4 {
@@ -188,6 +168,34 @@
   top: 10px;
   right: 10px;
   color: #fff;
+}
+
+/* Tag Cloud
+-------------------------------------------------------------- */
+
+.tag-cloud {
+	text-align: center;
+}
+
+.tag-cloud li {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 .5em;
+}
+
+.tag-cloud li.tag-1 {
+	font-size: 1em;
+	font-weight: 300;
+}
+
+.tag-cloud li.tag-2 {
+	font-size: 2em;
+	font-weight: 400;
+}
+
+.tag-cloud li.tag-3 {
+	font-size: 3em;
+	font-weight: 700;
 }
 
 /* Footer to Top
