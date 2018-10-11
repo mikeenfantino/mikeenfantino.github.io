@@ -1,83 +1,85 @@
 /* Max Width 768px
 ------------------------------------------------- */
-
 @media screen and (max-width: 768px) {
-
 	.header-profile-titles h1 {
-	  font-size: 2.375em; /* 38px/16px */
-		margin-bottom: 0.1315789473684211em; /* 5px/38px */
+		font-size: 2.375em;
+		/* 38px/16px */
+		margin-bottom: 0.1315789473684211em;
+		/* 5px/38px */
 	}
 
 	.header-profile-titles h2 {
-	  font-size: 0.875em; /* 14px/16px */
+		font-size: 0.875em;
+		/* 14px/16px */
+	}
+
+	section {
+		margin: 50px 0;
 	}
 
 	.box {
-	  float: none;
-	  width: auto;
-	  padding: 0 0 50px;
+		float: none;
+		width: auto;
+		padding: 0 0 50px;
 		position: relative;
 	}
 
 	.box:last-child {
-	  padding-bottom: 0;
+		padding-bottom: 0;
 	}
 
 	.box::after {
 		font-family: "Font Awesome 5 Free";
-	  content: "\f061";
+		content: "\f061";
 		font-weight: 900;
-	  position: absolute;
+		position: absolute;
 		left: 50%;
 		bottom: 16px;
-	  transform: translateX(-50%) rotate(90deg);
+		transform: translateX(-50%) rotate(90deg);
 		color: #bedbe8;
-		font-size: 1.25em; /* 20px/16px */
+		font-size: 1.25em;
+		/* 20px/16px */
 	}
-
-	.box:last-child::after,
-	.box:first-child::after {
-	  content: none;
+	// .box:first-child::after,
+	.box:last-child::after {
+		content: none;
 	}
 
 	.box-top {
-	  padding-top: 33.28911429318056%; /* 200px/600.797px */
+		padding-top: 33.28911429318056%;
+		/* 200px/600.797px */
 	}
 
 	.box-top::after {
-	  display: none;
+		display: none;
 	}
 
 	.box-top-icons {
-	  font-size: 2.75em; /* 44px/16px */
+		font-size: 2.75em;
+		/* 44px/16px */
 	}
 
 	.box-title h4 {
-	  font-size: 1.5em; /* 24px/16px */
+		font-size: 1.5em;
+		/* 24px/16px */
 	}
 
 	.box-content h5 {
-    font-size: 1.125em; /* 18px/16px */
+		font-size: 1.125em;
+		/* 18px/16px */
 	}
 
 	.box-content p {
-    font-size: 1em; /* 16px */
+		font-size: 1em;
+		/* 16px */
 	}
 
-	.box-content ul {
-    font-size: 1em; /* 16px */
+	.box-content-check-list li {
+		font-size: 1em;
+		/* 16px */
 	}
 
-	.tag-cloud li.tag-1 {
-		font-size: 0.75em;
-	}
-
-	.tag-cloud li.tag-2 {
+	.tag-cloud li {
 		font-size: 1em;
 	}
-
-	.tag-cloud li.tag-3 {
-		font-size: 1.5em;
-	}
-
 }
