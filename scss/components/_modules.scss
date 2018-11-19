@@ -294,3 +294,13 @@
 	margin: 40px auto;
 	position: relative;
 }
+/* JS State Rules
+-------------------------------------------------------------- */
+
+.js-box-fade {
+	opacity: 0;
+}
+
+.no-js .js-box-fade {
+	opacity: 1;
+}

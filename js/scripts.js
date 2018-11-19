@@ -14,8 +14,13 @@ jQuery(function($) { // jQuery no conflict
   });
 
   // MatchHeight
-  $('.js-matchheight-box').matchHeight();
-  $('.js-matchheight-box-header').matchHeight();
+  // $('.js-matchheight-box').matchHeight();
+  // $('.js-matchheight-box-header').matchHeight();
+
+  // Fade in boxes
+  $(".js-box-fade").each(function(i) {
+    $(this).delay(700 * i).fadeTo(700, 1);
+  });
 
   // Back to Top
   $(".js-back-to-top").on("click", function() {

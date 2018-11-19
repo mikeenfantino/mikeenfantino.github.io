@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html class="no-js">
 
 <head>
 	<title>Mike Enfantino | Front-end Web Developer | San Francisco Bay Area</title>
@@ -12,6 +12,11 @@
 	<link href="/css/vendor/magnific-popup.min.css" rel="stylesheet" />
 	<link href="/css/styles.css" rel="stylesheet" />
 	<link href="/css/responsive.css" rel="stylesheet" />
+	<!-- No JS -->
+	<script>
+		var elDocument = document.documentElement;
+		elDocument.className = elDocument.className.replace(/(^|\s)no-js(\s|$)/, '$1');
+	</script>
 </head>
 
 <body>
@@ -55,7 +60,7 @@
 			<div class="clear-fix">
 
 				<!-- Start Box -->
-				<div class="box js-matchheight-box">
+				<div class="box js-box-fade js-matchheight-box">
 					<div class="box-top">
 						<div class="box-top-content">
 							<div class="box-top-header hvcenter">
@@ -80,6 +85,7 @@
 							<li><span class="fa-li"><i class="fas fa-check fa-xs"></i></span>AJAX</li>
 							<li><span class="fa-li"><i class="fas fa-check fa-xs"></i></span>Sass</li>
 							<li><span class="fa-li"><i class="fas fa-check fa-xs"></i></span>Git</li>
+							<li><span class="fa-li"><i class="fas fa-check fa-xs"></i></span>Photoshop</li>
 							<li><span class="fa-li"><i class="fas fa-check fa-xs"></i></span>HTML Email</li>
 							<li><span class="fa-li"><i class="fas fa-check fa-xs"></i></span>WordPress</li>
 						</ul>
@@ -89,7 +95,7 @@
 				<!-- End Box -->
 
 				<!-- Start Box -->
-				<div class="box js-matchheight-box">
+				<div class="box js-box-fade js-matchheight-box">
 					<!-- <a class="box-top" href="https://dystrick.com/" target="_blank">
 						<div class="box-top-content">
 							<i class="fas fa-external-link-alt box-ext-link"></i>
@@ -121,7 +127,7 @@
 				<!-- End Box -->
 
 				<!-- Start Box -->
-				<div class="box js-matchheight-box">
+				<div class="box js-box-fade js-matchheight-box">
 					<div class="box-top">
 						<div class="box-top-content">
 							<div class="box-top-header hvcenter">
@@ -175,12 +181,12 @@
 		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfqaqfGCj2aJEtEG8vhm-PxUz5x2qNy4Z9n3s6ccSjPPgKxXg/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 	</div>
 
-	<!-- jQuery with fallback -->
+	<!-- Start jQuery with fallback -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script>
 		window.jQuery || document.write('<script src="/js/jquery-2.2.4.min.js"><\/script>')
 	</script>
-
+	<!-- End jQuery with fallback -->
 	<script src="/js/vendor/fontawesome-all.min.js"></script>
 	<script src="/js/vendor/magnific-popup.min.js"></script>
 	<script src="/js/vendor/jquery.matchHeight.min.js"></script>
