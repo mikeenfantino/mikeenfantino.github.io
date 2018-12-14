@@ -1,5 +1,6 @@
 /* Global Wrapper
 -------------------------------------------------------------- */
+
 .global-wrapper {
 	width: 80%;
 	max-width: 1150px;
@@ -7,6 +8,13 @@
 }
 /* Section
 -------------------------------------------------------------- */
+
 section {
 	margin: 100px 0;
+}
+
+section.cta {
+	background: #bedbe8;
+	padding: 25px 0;
+	margin-bottom: 0;
 }
