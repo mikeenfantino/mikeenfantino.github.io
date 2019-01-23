@@ -67,6 +67,13 @@
 .contact a:hover {
 	color: #555;
 }
+/* Section Header
+-------------------------------------------------------------- */
+
+.main-header {
+	margin-bottom: 30px;
+	text-align: center;
+}
 /* Box
 -------------------------------------------------------------- */
 .box {
@@ -113,6 +120,10 @@
 
 .box:last-child .box-top::after {
 	content: none;
+}
+
+.box.no-arrow .box-top::after {
+	display: none;
 }
 
 .box-top-header {
