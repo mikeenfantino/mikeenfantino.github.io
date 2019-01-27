@@ -10,7 +10,12 @@
 -------------------------------------------------------------- */
 
 section {
-	margin: 100px 0;
+	position: relative;
+	padding: 100px 0;
+}
+
+section.arrow-break {
+	border-bottom: 2px solid #ebebeb;
 }
 
 section.cta {

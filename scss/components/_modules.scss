@@ -1,5 +1,6 @@
 /* Header Profile
 -------------------------------------------------------------- */
+
 .header-profile {
 	text-align: center;
 }
@@ -46,6 +47,7 @@
 }
 /* Contact
 -------------------------------------------------------------- */
+
 .contact {
 	position: fixed;
 	top: 20px;
@@ -69,13 +71,13 @@
 }
 /* Section Header
 -------------------------------------------------------------- */
-
 .main-header {
 	margin-bottom: 30px;
 	text-align: center;
 }
 /* Box
 -------------------------------------------------------------- */
+
 .box {
 	float: left;
 	width: 33.33333333333333%;
@@ -207,11 +209,16 @@
 	line-height: 1.5;
 }
 
+.box-content-check-list li:last-child {
+	margin-bottom: 0;
+}
+
 .box-content-check-list .fa-li {
 	color: #bedbe8;
 }
 /* Tag Cloud
 -------------------------------------------------------------- */
+
 .tag-cloud {
 	text-align: center;
 }
@@ -236,6 +243,7 @@
 }
 /* Button List
 -------------------------------------------------------------- */
+
 .btn-list {
 	display: inline-block;
 }
@@ -250,6 +258,7 @@
 }
 /* Button
 -------------------------------------------------------------- */
+
 .btn {
 	display: block;
 	text-decoration: none;
@@ -261,12 +270,10 @@
 	transition: all 0.3s ease;
 }
 /* Button Size */
-
 .btn-sm {
 	width: 250px;
 }
 /* Button Color */
-
 .btn-white {
 	background: #fff;
 	color: #555;
@@ -277,7 +284,6 @@
 	color: #fff;
 }
 /* Button Font */
-
 .btn-default {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.125em;
@@ -288,6 +294,7 @@
 }
 /* Footer to Top
 -------------------------------------------------------------- */
+
 .footer-to-top {
 	text-align: center;
 	color: #555;
@@ -314,6 +321,7 @@
 }
 /* Modals
 -------------------------------------------------------------- */
+
 .about-modal {
 	background: #fff;
 	padding: 20px 30px;
@@ -351,12 +359,41 @@
 	margin: 40px auto;
 	position: relative;
 }
-/* JS State Rules
+/* Section Arrow
 -------------------------------------------------------------- */
-.js-box-fade {
-	opacity: 0;
+
+section.arrow-break::after,
+section.arrow-break::before {
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
-.no-js .js-box-fade {
-	opacity: 1;
+section.arrow-break-bg::before {
+	content: "\f0c8";
+	font-size: 60px;
+	bottom: -30px;
+	color: #fff;
 }
+
+section.arrow-break-icon::after {
+	content: "\f063";
+	font-size: 40px;
+	bottom: -20px;
+	color: #ebebeb;
+}
+/* JS State Rules
+-------------------------------------------------------------- */
+// .js-box-fade {
+// 	opacity: 0;
+// }
+// .no-js .js-box-fade {
+// 	opacity: 1;
+// }
