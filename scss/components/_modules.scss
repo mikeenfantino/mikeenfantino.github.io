@@ -1,13 +1,19 @@
 /* Header Profile
 -------------------------------------------------------------- */
+
 .header-profile {
 	text-align: center;
+	-webkit-perspective: 700px;
 	perspective: 700px;
 }
 
 .header-profile-pic {
 	margin: 0 auto 10px;
+	-webkit-transition: -webkit-transform 1s cubic-bezier(.55, -.62, .27, 1.2);
+	transition: -webkit-transform 1s cubic-bezier(.55, -.62, .27, 1.2);
 	transition: transform 1s cubic-bezier(.55, -.62, .27, 1.2);
+	transition: transform 1s cubic-bezier(.55, -.62, .27, 1.2), -webkit-transform 1s cubic-bezier(.55, -.62, .27, 1.2);
+	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	position: relative;
 	width: 200px;
@@ -15,6 +21,7 @@
 }
 
 .header-profile-pic.rotate {
+	-webkit-transform: rotateY(-180deg);
 	transform: rotateY(-180deg);
 }
 
@@ -36,6 +43,7 @@
 	position: absolute;
 	left: 0;
 	top: 0;
+	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 }
 
@@ -48,11 +56,13 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
 
 .header-profile-pic .circle.back,
 .header-profile-pic .circle.front {
+	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 
@@ -108,6 +118,7 @@
 }
 /* Contact
 -------------------------------------------------------------- */
+
 .contact {
 	position: fixed;
 	top: 20px;
@@ -131,13 +142,13 @@
 }
 /* Section Header
 -------------------------------------------------------------- */
-
 .main-header {
 	margin-bottom: 30px;
 	text-align: center;
 }
 /* Box
 -------------------------------------------------------------- */
+
 .box {
 	float: left;
 	width: 33.33333333333333%;
@@ -278,6 +289,7 @@
 }
 /* Tag Cloud
 -------------------------------------------------------------- */
+
 .tag-cloud {
 	text-align: center;
 }
@@ -302,6 +314,7 @@
 }
 /* Button List
 -------------------------------------------------------------- */
+
 .btn-list {
 	display: inline-block;
 }
@@ -316,6 +329,7 @@
 }
 /* Button
 -------------------------------------------------------------- */
+
 .btn {
 	display: block;
 	text-decoration: none;
@@ -327,12 +341,10 @@
 	transition-duration: 0.4s;
 }
 /* Button Size */
-
 .btn-sm {
 	width: 250px;
 }
 /* Button Color */
-
 .btn-white {
 	background: #fff;
 	color: #555;
@@ -347,7 +359,6 @@
 	background: #333;
 }
 /* Button Font */
-
 .btn-default {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.125em;
@@ -358,6 +369,7 @@
 }
 /* Footer to Top
 -------------------------------------------------------------- */
+
 .footer-to-top {
 	text-align: center;
 	color: #555;
@@ -423,6 +435,7 @@
 }
 /* Section Arrow
 -------------------------------------------------------------- */
+
 section.arrow-break::after,
 section.arrow-break::before {
 	display: inline-block;
