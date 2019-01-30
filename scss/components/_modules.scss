@@ -1,23 +1,59 @@
 /* Header Profile
 -------------------------------------------------------------- */
-
 .header-profile {
 	text-align: center;
+	perspective: 700px;
 }
 
 .header-profile-pic {
-	margin-bottom: 10px;
+	margin: 0 auto 10px;
+	transition: transform 1s cubic-bezier(.55, -.62, .27, 1.2);
+	transform-style: preserve-3d;
+	position: relative;
+	width: 200px;
+	height: 200px;
 }
 
-.header-profile-pic a {
+.header-profile-pic.rotate {
+	transform: rotateY(-180deg);
+}
+
+.header-profile-pic .circle {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+}
+
+.header-profile-pic .circle.front {
 	background-image: url("/img/retina-mike.jpg");
 	background-size: cover;
 	background-position: center;
-	width: 200px;
-	height: 200px;
-	display: inline-block;
-	border-radius: 50%;
-	border: 3px solid #fff;
+}
+
+.header-profile-pic .circle.back {
+	background: #555;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: rotateY(180deg);
+}
+
+.header-profile-pic .circle.back::after {
+	font-family: "Font Awesome 5 Free";
+	content: "\f7b6";
+	font-weight: 900;
+	font-size: 4.5em;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header-profile-pic .circle.back,
+.header-profile-pic .circle.front {
+	backface-visibility: hidden;
 }
 
 .header-profile-titles {
@@ -41,13 +77,37 @@
 	line-height: 1.25;
 }
 
-.header-profile-titles h3 {
+.header-profile-titles > p {
 	margin-top: 0.9375em;
 	/* 15px/16px */
 }
+
+.header-profile-more {
+	background: #fff;
+	border-radius: 10px;
+	max-width: 600px;
+	margin: 20px auto 0;
+	padding: 20px;
+}
+
+.header-profile-more h3 {
+	font-size: 1.125em;
+	margin-bottom: 1.111111111111111em;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.header-profile-more p {
+	font-weight: 300;
+	line-height: 1.5;
+	margin-bottom: 1em;
+}
+
+.header-profile-more p:last-child {
+	margin-bottom: 0;
+}
 /* Contact
 -------------------------------------------------------------- */
-
 .contact {
 	position: fixed;
 	top: 20px;
@@ -71,13 +131,13 @@
 }
 /* Section Header
 -------------------------------------------------------------- */
+
 .main-header {
 	margin-bottom: 30px;
 	text-align: center;
 }
 /* Box
 -------------------------------------------------------------- */
-
 .box {
 	float: left;
 	width: 33.33333333333333%;
@@ -218,7 +278,6 @@
 }
 /* Tag Cloud
 -------------------------------------------------------------- */
-
 .tag-cloud {
 	text-align: center;
 }
@@ -243,7 +302,6 @@
 }
 /* Button List
 -------------------------------------------------------------- */
-
 .btn-list {
 	display: inline-block;
 }
@@ -258,7 +316,6 @@
 }
 /* Button
 -------------------------------------------------------------- */
-
 .btn {
 	display: block;
 	text-decoration: none;
@@ -266,14 +323,16 @@
 }
 
 .btn-trans {
-	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease;
+	transition-property: background, color;
+	transition-duration: 0.4s;
 }
 /* Button Size */
+
 .btn-sm {
 	width: 250px;
 }
 /* Button Color */
+
 .btn-white {
 	background: #fff;
 	color: #555;
@@ -283,7 +342,12 @@
 	background: #555;
 	color: #fff;
 }
+
+.btn-white:active {
+	background: #333;
+}
 /* Button Font */
+
 .btn-default {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.125em;
@@ -294,7 +358,6 @@
 }
 /* Footer to Top
 -------------------------------------------------------------- */
-
 .footer-to-top {
 	text-align: center;
 	color: #555;
@@ -321,37 +384,36 @@
 }
 /* Modals
 -------------------------------------------------------------- */
-
-.about-modal {
-	background: #fff;
-	padding: 20px 30px;
-	max-width: 600px;
-	margin: 40px auto;
-	position: relative;
-}
-
-.about-modal h2 {
-	font-size: 1.75em;
-	/* 28px/16px */
-	text-align: center;
-	padding-bottom: 0.7142857142857143em;
-	/* 20px/28px */
-}
-
-.about-modal p {
-	font-weight: 300;
-	line-height: 1.5;
-	margin-bottom: 1em;
-	/* 16px */
-}
-
-.about-modal p:last-of-type {
-	margin-bottom: 0;
-}
-
-.about-modal a {
-	color: #555;
-}
+// .about-modal {
+// 	background: #fff;
+// 	padding: 20px 30px;
+// 	max-width: 600px;
+// 	margin: 40px auto;
+// 	position: relative;
+// }
+//
+// .about-modal h2 {
+// 	font-size: 1.75em;
+// 	/* 28px/16px */
+// 	text-align: center;
+// 	padding-bottom: 0.7142857142857143em;
+// 	/* 20px/28px */
+// }
+//
+// .about-modal p {
+// 	font-weight: 300;
+// 	line-height: 1.5;
+// 	margin-bottom: 1em;
+// 	/* 16px */
+// }
+//
+// .about-modal p:last-of-type {
+// 	margin-bottom: 0;
+// }
+//
+// .about-modal a {
+// 	color: #555;
+// }
 
 .contact-modal {
 	max-width: 600px;
@@ -361,7 +423,6 @@
 }
 /* Section Arrow
 -------------------------------------------------------------- */
-
 section.arrow-break::after,
 section.arrow-break::before {
 	display: inline-block;

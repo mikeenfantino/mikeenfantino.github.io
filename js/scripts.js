@@ -13,6 +13,31 @@ jQuery(function($) { // jQuery no conflict
     mainClass: 'my-mfp-zoom-in'
   });
 
+  // Header Profile
+  var aboutMeLink = $('<p><a id="js-about-me" href="##">About me</a></p>');
+  var headerProfileTitles = $(".header-profile-titles");
+  var headerProfileMore = $(".header-profile-more");
+
+  headerProfileTitles.append(aboutMeLink);
+
+  headerProfileMore.hide();
+
+  headerProfileTitles.on("click", "#js-about-me", function(e) {
+    e.preventDefault();
+
+    // About me pic
+    $(".header-profile-pic").toggleClass("rotate");
+
+    // About me content
+    headerProfileMore.slideToggle(400, function() {
+      if ($(this).is(":visible")) {
+        $("#js-about-me").hide().fadeIn().text("Close");
+      } else {
+        $("#js-about-me").hide().fadeIn().text("About me");
+      }
+    });
+  });
+
   // MatchHeight
   // $('.js-matchheight-box').matchHeight();
   // $('.js-matchheight-box-header').matchHeight();

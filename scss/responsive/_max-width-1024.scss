@@ -1,6 +1,14 @@
 /* Max Width 1024px
 ------------------------------------------------- */
 @media screen and (max-width: 1024px) {
+	.header-profile-more h3 {
+		font-size: 1em;
+	}
+
+	.header-profile-more p {
+		font-size: 0.875em;
+	}
+
 	.main-header p {
 		font-size: 0.875em;
 	}
