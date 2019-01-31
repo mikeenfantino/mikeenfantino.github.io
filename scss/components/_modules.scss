@@ -1,6 +1,5 @@
 /* Header Profile
 -------------------------------------------------------------- */
-
 .header-profile {
 	text-align: center;
 	-webkit-perspective: 700px;
@@ -23,6 +22,13 @@
 .header-profile-pic.rotate {
 	-webkit-transform: rotateY(-180deg);
 	transform: rotateY(-180deg);
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	// ie10+
+	.header-profile-pic.rotate {
+		-webkit-transform: none;
+		transform: none;
+	}
 }
 
 .header-profile-pic .circle {
@@ -118,7 +124,6 @@
 }
 /* Contact
 -------------------------------------------------------------- */
-
 .contact {
 	position: fixed;
 	top: 20px;
@@ -135,6 +140,10 @@
 	padding: 0.25em;
 	/* 5px/20px */
 	display: block;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
 }
 
 .contact a:hover {
@@ -142,13 +151,13 @@
 }
 /* Section Header
 -------------------------------------------------------------- */
+
 .main-header {
 	margin-bottom: 30px;
 	text-align: center;
 }
 /* Box
 -------------------------------------------------------------- */
-
 .box {
 	float: left;
 	width: 33.33333333333333%;
@@ -289,7 +298,6 @@
 }
 /* Tag Cloud
 -------------------------------------------------------------- */
-
 .tag-cloud {
 	text-align: center;
 }
@@ -314,7 +322,6 @@
 }
 /* Button List
 -------------------------------------------------------------- */
-
 .btn-list {
 	display: inline-block;
 }
@@ -329,7 +336,6 @@
 }
 /* Button
 -------------------------------------------------------------- */
-
 .btn {
 	display: block;
 	text-decoration: none;
@@ -337,14 +343,18 @@
 }
 
 .btn-trans {
+	-webkit-transition-property: background, color;
 	transition-property: background, color;
-	transition-duration: 0.4s;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
 }
 /* Button Size */
+
 .btn-sm {
 	width: 250px;
 }
 /* Button Color */
+
 .btn-white {
 	background: #fff;
 	color: #555;
@@ -359,17 +369,18 @@
 	background: #333;
 }
 /* Button Font */
+
 .btn-default {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.125em;
 	/* 18px/16px */
-	font-weight: 400;
+	font-weight: 300;
 	padding: 0.8333333333333333em;
 	/* 15px/18px */
+	border-radius: 5px;
 }
 /* Footer to Top
 -------------------------------------------------------------- */
-
 .footer-to-top {
 	text-align: center;
 	color: #555;
@@ -435,7 +446,6 @@
 }
 /* Section Arrow
 -------------------------------------------------------------- */
-
 section.arrow-break::after,
 section.arrow-break::before {
 	display: inline-block;
