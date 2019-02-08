@@ -1,6 +1,8 @@
 jQuery(function($) { // jQuery no conflict
 
-  // Magnific Popup
+  /* Magnific Popup
+  -------------------------------------------------------------- */
+
   $('.popup-with-zoom-anim').magnificPopup({
     type: 'inline',
     fixedContentPos: false,
@@ -13,13 +15,14 @@ jQuery(function($) { // jQuery no conflict
     mainClass: 'my-mfp-zoom-in'
   });
 
-  // Header Profile
+  /* Header Profile
+  -------------------------------------------------------------- */
+
   var aboutMeLink = $('<p><a id="js-about-me" href="##">About me</a></p>');
   var headerProfileTitles = $(".header-profile-titles");
   var headerProfileMore = $(".header-profile-more");
 
   headerProfileTitles.append(aboutMeLink);
-
   headerProfileMore.hide();
 
   headerProfileTitles.on("click", "#js-about-me", function(e) {
@@ -38,7 +41,40 @@ jQuery(function($) { // jQuery no conflict
     });
   });
 
-  // MatchHeight
+  /* News Section
+  -------------------------------------------------------------- */
+
+  var newsLink = $('<hr /><p class="arrow"><a id="js-news" href="##">What am I up to?</a></p>');
+  var sectionNews = $("section.news");
+  var closeNews = $('<div id="js-close-news" class="section-close"><span class="section-close-icon"><i class="fas fa-times"></i></span></div>');
+
+  headerProfileTitles.append(newsLink);
+  sectionNews.hide().append(closeNews);
+
+  headerProfileTitles.on("click", "#js-news", function(e) {
+    e.preventDefault();
+    // Rotate link arrow
+    $(".header-profile-titles .arrow").toggleClass("arrow-rotate");
+    // Open/close section
+    sectionNews.slideToggle(400);
+    // Animate close button
+    $(".section-close-icon").toggleClass("on");
+  });
+
+  // News Close Button
+  sectionNews.on("click", "#js-close-news", function(e) {
+    e.preventDefault();
+    // Animate close button
+    $(".section-close-icon").removeClass("on");
+    // Close section
+    sectionNews.slideUp(400);
+    // Rotate link arrow
+    $(".header-profile-titles .arrow").removeClass("arrow-rotate");
+  });
+
+  /* MatchHeight
+  -------------------------------------------------------------- */
+
   // $('.js-matchheight-box').matchHeight();
   // $('.js-matchheight-box-header').matchHeight();
 
@@ -47,7 +83,9 @@ jQuery(function($) { // jQuery no conflict
   //   $(this).delay(700 * i).fadeTo(700, 1);
   // });
 
-  // Back to Top
+  /* Back to Top
+  -------------------------------------------------------------- */
+
   $(".js-back-to-top").on("click", function() {
     $("html, body").animate({
       scrollTop: 0

@@ -1,14 +1,16 @@
 /* Global Wrapper
 -------------------------------------------------------------- */
-
 .global-wrapper {
 	width: 80%;
 	max-width: 1150px;
 	margin: 0 auto;
 }
+
+section.news .global-wrapper {
+	max-width: 850px;
+}
 /* Section
 -------------------------------------------------------------- */
-
 section {
 	position: relative;
 	padding: 100px 0;
@@ -22,4 +24,8 @@ section.cta {
 	background: #bedbe8;
 	padding: 25px 0;
 	margin-bottom: 0;
+}
+
+section.news {
+	border-bottom: 2px solid #ebebeb;
 }
