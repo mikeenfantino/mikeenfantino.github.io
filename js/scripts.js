@@ -59,6 +59,18 @@ jQuery(function($) { // jQuery no conflict
     sectionNews.slideToggle(400);
     // Animate close button
     $(".section-close-icon").toggleClass("on");
+    // Scroll page
+    if ($(".header-profile-titles .arrow").hasClass("arrow-rotate")) {
+      // Scroll to link
+      $("html, body").animate({
+        scrollTop: $(this).offset().top
+      }, 800);
+    } else {
+      // Scroll to top of page
+      $("html, body").animate({
+        scrollTop: 0
+      }, 800);
+    }
   });
 
   // News Close Button
@@ -70,6 +82,10 @@ jQuery(function($) { // jQuery no conflict
     sectionNews.slideUp(400);
     // Rotate link arrow
     $(".header-profile-titles .arrow").removeClass("arrow-rotate");
+    // Scroll to top of page
+    $("html, body").animate({
+      scrollTop: 0
+    }, 800);
   });
 
   /* MatchHeight
