@@ -1,5 +1,6 @@
 /* Header Profile
 -------------------------------------------------------------- */
+
 .header-profile {
 	text-align: center;
 	-webkit-perspective: 700px;
@@ -157,12 +158,13 @@
 }
 /* Contact
 -------------------------------------------------------------- */
+
 .contact {
 	position: fixed;
 	top: 20px;
 	right: 0;
 	background: #bedbe8;
-	box-shadow: -1px 1px 1px #959595;
+	box-shadow: -1px 1px 1px 0 #959595;
 	z-index: 1;
 }
 
@@ -182,7 +184,6 @@
 }
 /* Section Header
 -------------------------------------------------------------- */
-
 .main-header {
 	max-width: 800px;
 	margin: 0 auto 30px;
@@ -190,6 +191,7 @@
 }
 /* Box
 -------------------------------------------------------------- */
+
 .box {
 	float: left;
 	width: 33.33333333333333%;
@@ -330,6 +332,7 @@
 }
 /* Tag Cloud
 -------------------------------------------------------------- */
+
 .tag-cloud {
 	text-align: center;
 }
@@ -354,7 +357,6 @@
 }
 /* Icon List
 -------------------------------------------------------------- */
-
 .icon-list.fa-ul {
 	margin-left: 2em;
 }
@@ -386,6 +388,7 @@
 }
 /* Button List
 -------------------------------------------------------------- */
+
 .btn-list {
 	display: inline-block;
 }
@@ -400,6 +403,7 @@
 }
 /* Button
 -------------------------------------------------------------- */
+
 .btn {
 	display: block;
 	text-decoration: none;
@@ -411,12 +415,10 @@
 	transition: background 0.3s, color 0.3s;
 }
 /* Button Size */
-
 .btn-sm {
 	width: 250px;
 }
 /* Button Color */
-
 .btn-white {
 	background: #fff;
 	color: #555;
@@ -429,9 +431,9 @@
 
 .btn-white:active {
 	background: #333;
+	box-shadow: none;
 }
 /* Button Font */
-
 .btn-default {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.125em;
@@ -440,9 +442,11 @@
 	padding: 0.8333333333333333em;
 	/* 15px/18px */
 	border-radius: 5px;
+	box-shadow: -1px 1px 1px 0 #959595;
 }
 /* Footer to Top
 -------------------------------------------------------------- */
+
 .footer-to-top {
 	text-align: center;
 	color: #555;
@@ -508,6 +512,7 @@
 }
 /* Section Arrow Divider
 -------------------------------------------------------------- */
+
 section.arrow-break::after,
 section.arrow-break::before {
 	display: inline-block;
@@ -537,6 +542,7 @@ section.arrow-break-icon::after {
 }
 /* Section Arrow Pointer
 -------------------------------------------------------------- */
+
 section.arrow-down::after {
 	top: 0;
 	left: 50%;
@@ -553,6 +559,7 @@ section.arrow-down::after {
 }
 /* Section Close
 -------------------------------------------------------------- */
+
 .section-close {
 	position: absolute;
 	left: 50%;
