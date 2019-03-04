@@ -8,7 +8,6 @@ jQuery(function($) { // jQuery no conflict
   const headerProfileMore = $(".header-profile-more");
 
   headerProfileTitles.append(aboutMeLink);
-  headerProfileMore.hide();
 
   // Function aboutMe
   function aboutMe(e) {
@@ -39,7 +38,7 @@ jQuery(function($) { // jQuery no conflict
   const closeNews = $('<div id="js-close-news" class="section-close"><span class="section-close-icon"><i class="fas fa-times"></i></span></div>');
 
   headerProfileTitles.append(newsLink);
-  sectionNews.hide().append(closeNews);
+  sectionNews.append(closeNews);
 
   // Function news
   function news(e) {

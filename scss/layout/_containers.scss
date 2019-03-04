@@ -1,5 +1,6 @@
 /* Global Wrapper
 -------------------------------------------------------------- */
+
 .global-wrapper {
 	width: 80%;
 	max-width: 1150px;
@@ -11,6 +12,7 @@ section.news .global-wrapper {
 }
 /* Section
 -------------------------------------------------------------- */
+
 section {
 	position: relative;
 	padding: 100px 0;
@@ -26,6 +28,11 @@ section.cta {
 	margin-bottom: 0;
 }
 
+.no-js section.news {
+	display: block;
+}
+
 section.news {
+	display: none;
 	border-bottom: 2px solid #ebebeb;
 }
