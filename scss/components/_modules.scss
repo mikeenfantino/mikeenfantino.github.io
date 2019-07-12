@@ -1,5 +1,6 @@
 /* Header Profile
 -------------------------------------------------------------- */
+
 .header-profile {
 	text-align: center;
 	-webkit-perspective: 700px;
@@ -162,6 +163,7 @@
 }
 /* Contact
 -------------------------------------------------------------- */
+
 .contact {
 	position: fixed;
 	top: 20px;
@@ -187,7 +189,6 @@
 }
 /* Section Header
 -------------------------------------------------------------- */
-
 .main-header {
 	max-width: 800px;
 	margin: 0 auto 30px;
@@ -195,6 +196,7 @@
 }
 /* Box
 -------------------------------------------------------------- */
+
 .box {
 	float: left;
 	width: 33.33333333333333%;
@@ -317,7 +319,7 @@
 }
 
 .box-content-check-list.fa-ul {
-	margin-left: 2em;
+	margin: 1em 0 1em 2em;
 }
 
 .box-content-check-list li {
@@ -335,6 +337,7 @@
 }
 /* Tag Cloud
 -------------------------------------------------------------- */
+
 .tag-cloud {
 	text-align: center;
 }
@@ -359,7 +362,6 @@
 }
 /* Icon List
 -------------------------------------------------------------- */
-
 .icon-list.fa-ul {
 	margin-left: 2em;
 }
@@ -391,6 +393,7 @@
 }
 /* Button List
 -------------------------------------------------------------- */
+
 .btn-list {
 	display: inline-block;
 }
@@ -405,6 +408,7 @@
 }
 /* Button
 -------------------------------------------------------------- */
+
 .btn {
 	display: block;
 	text-decoration: none;
@@ -416,12 +420,10 @@
 	transition: background 0.3s, color 0.3s;
 }
 /* Button Size */
-
 .btn-sm {
 	width: 250px;
 }
 /* Button Color */
-
 .btn-white {
 	background: #fff;
 	color: #555;
@@ -437,7 +439,6 @@
 	box-shadow: none;
 }
 /* Button Font */
-
 .btn-default {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.125em;
@@ -450,6 +451,7 @@
 }
 /* Footer to Top
 -------------------------------------------------------------- */
+
 .footer-to-top {
 	text-align: center;
 	color: #555;
@@ -515,6 +517,7 @@
 }
 /* Section Arrow Divider
 -------------------------------------------------------------- */
+
 section.arrow-break::after,
 section.arrow-break::before {
 	display: inline-block;
@@ -544,6 +547,7 @@ section.arrow-break-icon::after {
 }
 /* Section Arrow Pointer
 -------------------------------------------------------------- */
+
 section.arrow-down::after {
 	top: 0;
 	left: 50%;
@@ -560,6 +564,7 @@ section.arrow-down::after {
 }
 /* Section Close
 -------------------------------------------------------------- */
+
 .section-close {
 	position: absolute;
 	left: 50%;
