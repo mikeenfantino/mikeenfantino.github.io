@@ -114,7 +114,7 @@ jQuery(function($) { // jQuery no conflict
     fixedContentPos: false,
     fixedBgPos: true,
     overflowY: 'auto',
-    closeBtnInside: true,
+    closeBtnInside: false,
     preloader: false,
     midClick: true,
     removalDelay: 300,

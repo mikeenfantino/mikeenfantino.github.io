@@ -521,11 +521,16 @@
 // }
 
 .contact-modal {
-	max-width: 600px;
-	height: 972px;
+	// max-width: 600px;
+	height: 767px;
 	margin: 40px auto;
 	position: relative;
 }
+
+.mfp-close {
+	font-size: 50px;
+}
+
 /* Section Arrow Divider
 -------------------------------------------------------------- */
 
