@@ -430,10 +430,12 @@
 	-webkit-transition: background 0.3s, color 0.3s;
 	transition: background 0.3s, color 0.3s;
 }
+
 /* Button Size */
 .btn-sm {
 	width: 250px;
 }
+
 /* Button Color */
 .btn-white {
 	background: #fff;
@@ -449,12 +451,37 @@
 	background: #333;
 	box-shadow: none;
 }
+
+.btn-dark {
+	background: #bedbe8;
+	color: #fff;
+	text-shadow: -1px 1px 0px #959595;
+}
+
+.btn-dark:hover {
+	background: #555;
+	text-shadow: none;
+}
+
+.btn-dark:active {
+	background: #333;
+	box-shadow: none;
+}
+
+/* Font Weight */
+.btn-bold {
+	font-weight: 700;
+}
+
+.btn-light {
+	font-weight: 300;
+}
+
 /* Button Font */
 .btn-default {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.125em;
 	/* 18px/16px */
-	font-weight: 300;
 	padding: 0.8333333333333333em;
 	/* 15px/18px */
 	border-radius: 5px;
