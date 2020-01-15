@@ -548,8 +548,10 @@
 // }
 
 .contact-modal {
-	// max-width: 600px;
-	height: 767px;
+	max-width: 712px;
+	height: 812px;
+	background: #fafafa;
+	border-radius: 10px;
 	margin: 40px auto;
 	position: relative;
 }
