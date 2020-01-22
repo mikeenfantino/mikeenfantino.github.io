@@ -21,3 +21,17 @@
 .main-header p:last-child {
 	margin-bottom: 0;
 }
+
+/* Main Footer
+-------------------------------------------------------------- */
+
+.main-footer p {
+	font-weight: 300;
+	margin-bottom: 1em; /* 16px */
+	line-height: 1.5;
+	font-style: italic;
+}
+
+.main-footer p:last-child {
+	margin-bottom: 0;
+}

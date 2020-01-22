@@ -29,6 +29,10 @@
 		font-size: 1em;
 	}
 
+	.main-footer p {
+		font-size: 1em;
+	}
+
 	.icon-list p {
 		font-size: 1em;
 	}
@@ -51,7 +55,8 @@
 		position: absolute;
 		left: 50%;
 		bottom: 16px;
-		transform: translateX(-50%) rotate(90deg);
+		-webkit-transform: translateX(-50%) rotate(90deg);
+		        transform: translateX(-50%) rotate(90deg);
 		color: #bedbe8;
 		font-size: 1.25em;
 		/* 20px/16px */
